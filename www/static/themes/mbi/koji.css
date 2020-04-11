@@ -1,0 +1,19 @@
+@import url("../../koji.css");
+
+#kojiLogo {
+    width: 205px;
+    height: 40px;
+}
+
+#mainNav {
+    background-color: #090;
+}
+
+#mainNav ul li {
+    background-color: #060;
+    border-color: #090;
+}
+
+h4 {
+    background-color: #060;
+}
