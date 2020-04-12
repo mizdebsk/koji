@@ -67,6 +67,7 @@ class Dispatcher(object):
         ['KojiHubURL', 'string', 'http://localhost/kojihub'],
         ['KojiFilesURL', 'string', 'http://localhost/kojifiles'],
         ['KojiTheme', 'string', None],
+        ['KojiStaticDir', 'string', None],
         ['KojiGreeting', 'string', 'Welcome to Koji Web'],
         ['LiteralFooter', 'boolean', True],
 
