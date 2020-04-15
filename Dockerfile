@@ -15,6 +15,7 @@ RUN : \
       python3-multilib \
       mock \
       nosync \
+      git-core \
  && dnf -y clean all \
  && useradd koji \
  && usermod -G mock koji \
