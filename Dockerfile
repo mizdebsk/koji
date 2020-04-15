@@ -17,8 +17,8 @@ RUN : \
       nosync \
       git-core \
  && dnf -y clean all \
- && useradd koji \
- && usermod -G mock koji \
+ && useradd kojibuilder \
+ && usermod -G mock kojibuilder \
  && :
 
 COPY ./ /opt/koji/
@@ -26,7 +26,7 @@ COPY ./ /opt/koji/
 RUN : \
  && chown -R apache:apache /opt/koji/ \
  && mkdir /etc/mock/koji/ \
- && chown koji:mock /etc/mock/koji/ \
+ && chown kojibuilder:mock /etc/mock/koji/ \
  && ln -sf ../koji/site-defaults.cfg /etc/mock/site-defaults.cfg \
  && :
 
