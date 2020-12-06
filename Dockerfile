@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:32
+FROM registry.fedoraproject.org/fedora:33
 ENV PYTHONPATH=/opt/koji:/opt/koji/cli
 EXPOSE 8080
 
